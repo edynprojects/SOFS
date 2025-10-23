@@ -43,18 +43,18 @@ hamburger.addEventListener("click", () => {
 let lastScrollY = window.scrollY;
 const nav = document.querySelector(".navigation");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > lastScrollY) {
-    // scrolling down
-    nav.classList.add("nav-hidden");
-    console.log("Scrolling Down");
-  } else {
-    // scrolling up
-    console.log("Scrolling up");
-    nav.classList.remove("nav-hidden");
-  }
-  lastScrollY = window.scrollY;
-});
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > lastScrollY) {
+//     // scrolling down
+//     nav.classList.add("nav-hidden");
+//     console.log("Scrolling Down");
+//   } else {
+//     // scrolling up
+//     console.log("Scrolling up");
+//     nav.classList.remove("nav-hidden");
+//   }
+//   lastScrollY = window.scrollY;
+// });
 import "./../assets/styles/style.css";
 
 const counters = document.querySelectorAll(".count");

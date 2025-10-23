@@ -2,7 +2,7 @@ export function loadProducts() {
   const packages = [
     {
       title: "Basic Family Package",
-      image: "/public/photo_2025-10-20_22-41-09.jpg",
+      image: "/photo_2025-10-20_22-41-09.jpg",
       features: [
         "Access to family workshops",
         "Monthly counseling session",
@@ -15,7 +15,7 @@ export function loadProducts() {
     },
     {
       title: "Premium Family Plan",
-      image: "/public/avatar 4.jpg",
+      image: "/avatar 4.jpg",
       features: [
         "Weekly family mentoring",
         "Access to premium events",
@@ -28,7 +28,7 @@ export function loadProducts() {
     },
     {
       title: "School Partnership Plan",
-           image: "/public/avatar 8.jpg",
+      image: "/avatar 8.jpg",
       features: [
         "School-wide training",
         "Parent-teacher synergy program",
@@ -41,7 +41,7 @@ export function loadProducts() {
     },
     {
       title: "Church Engagement Plan",
-            image: "/public/avatar 11.jpg",
+      image: "/avatar 11.jpg",
       features: [
         "Marriage ministry support",
         "Church-wide seminars",
@@ -65,7 +65,6 @@ export function loadProducts() {
         </div>
         <h3 class="pricing-grid-title">${pkg.title}</h3>
         <div class="pricing-grid-features">
-        
           ${pkg.features.map(feature => `<div><ion-icon name="checkmark-circle-outline"></ion-icon><li>${feature}</li></div>`).join("")}
         </div>
         <div class="pricing-grid-button">
