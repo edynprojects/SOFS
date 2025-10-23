@@ -837,7 +837,7 @@ button {
 }
 @media (max-width: 500px) {
   .cta h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .cta p {
     width: 100%;
