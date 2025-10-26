@@ -21,6 +21,9 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/css/intlTelInput.css">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SOFS</title>
   </head>
@@ -48,9 +51,9 @@
         <div class="cta">
           <div class="main-container">
             <h1>
-              Because Every Family Deserves
+              School of Family Solutions
               <span id="#marker-text" class="cta-highlight"
-                >Peace, Purpose & Partnership</span
+                >We Love Family challenges</span
               >
             </h1>
             <p>
@@ -304,6 +307,67 @@ At the School of Family Solutions, we’ve witnessed transformation in countless
         </div>
       </div>
     </section>
+<section class="contact">
+  <div class="container">
+    <div class="title">
+      <h3>Contact Us</h3>
+    </div>
+    <div class="contact-grid-container">
+      
+      <!-- Image Side -->
+      <div class="contact-grid-img">
+        <img src="/public/contact.png" alt="Family coaching" />
+      </div>
+
+      <!-- Form Side -->
+      <div class="contact-grid">
+        <h2>Get in Touch</h2>
+        
+        <p>We’d love to hear from you. Whether you have a question about our programs, partnership, or family coaching, we’re here to help.</p>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+          <div class="form-group-row">
+            <input type="text" name="name" placeholder="First Name" required>
+            <input type="text" name="name" placeholder="Last Name" required>
+          </div>
+<div class="form-group-tel">
+  <input type="tel" id="phone" name="phone" placeholder="Kindly enter your phone number" required>
+</div>
+
+          <div class="form-group">
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Share a quick hint about your concerns" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="grid-container">
+          <div class="grid">
+            .
+          </div>
+          <div class="grid">hey</div>
+          <div class="grid">hey</div>
+        </div>
+      </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/intlTelInput.min.js"></script>
+<script>
+  const input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/utils.js"),
+  });
+</script>
+
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

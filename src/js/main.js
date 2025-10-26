@@ -2,7 +2,9 @@ console.log("WITH GOD I CAN");
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import intlTelInput from "intl-tel-input";
+import "./../assets/styles/style.css";
+import "intl-tel-input/build/css/intlTelInput.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const markerText = document.querySelector(".cta-highlight");
@@ -55,7 +57,6 @@ const nav = document.querySelector(".navigation");
 //   }
 //   lastScrollY = window.scrollY;
 // });
-import "./../assets/styles/style.css";
 
 const counters = document.querySelectorAll(".count");
 
@@ -86,3 +87,19 @@ const observer = new IntersectionObserver(
 );
 
 counters.forEach((counter) => observer.observe(counter));
+
+const input = document.querySelector("#phone");
+
+const iti = window.intlTelInput(input, {
+  initialCountry: "auto",
+  geoIpLookup: (callback) => {
+    fetch("https://ipapi.co/json")
+      .then((res) => res.json())
+      .then((data) => callback(data.country_code))
+      .catch(() => callback("ng")); // fallback
+  },
+  nationalMode: false,
+  autoPlaceholder: "polite",
+  utilsScript:
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/utils.js",
+});
