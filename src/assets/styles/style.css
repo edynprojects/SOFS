@@ -71,7 +71,7 @@ button {
   min-height: auto;
   position: relative;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -126,8 +126,8 @@ button {
   right: 5%;
 }
 .person-3 {
-  top: 85%;
-  left: 17%;
+  top: 80%;
+  left: 10%;
 }
 
 .navigation {
@@ -232,6 +232,7 @@ button {
 }
 .cta-footer h2 {
   color: var(--clr-secondary);
+  font-size: 24px;
 }
 .cta-footer button {
   padding: var(--space-1) var(--space-2);
@@ -678,6 +679,7 @@ button {
 }
 
 .contact-note {
+  margin: 10px 0;
   font-size: 3rem;
   font-family: tangerine;
   text-align: left;
@@ -802,6 +804,9 @@ button {
   }
   .cta-footer {
     flex-direction: column;
+  }
+  .cta-footer h2 {
+    font-size: 1.3rem;
   }
   .person-1 {
     top: 30%;
@@ -1246,4 +1251,7 @@ button {
     flex-direction: column;
     gap: 1rem;
   }
+  .contact-form textarea {
+  height: 5rem;
+}
 }

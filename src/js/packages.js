@@ -17,8 +17,8 @@ export function loadProducts() {
     },
     {
       title: "SmartPath Parenting Course",
-      image: "/avatar 1.jpg",
-      info: "Parenting is beautiful… but it’s also one of the hardest jobs on earth. <br>Many parents love deeply yet feel lost — unsure how to guide, correct, or connect without guilt or frustration. It’s more than a class — it’s your compass for raising whole, secure, and purpose-driven children.",
+      image: "SmartPath Parenting.jpg",
+      info: "Parenting doesn’t come with a manual — but SmartPath gives you the map. <br>That’s why we created the SmartPath Parenting Course — a transformational journey designed to help you parent with wisdom, confidence, and peace, using our  SOFS signature proven - tools and specialised strategies that work. <br> Inside SmartPath, you’ll discover how to",
       features: [
         "Decode your child’s behavior and unique wiring",
         "Discipline without damage — correct with love and authority",
@@ -30,7 +30,7 @@ export function loadProducts() {
     },
     {
       title: "Into-Me-See: The User’s Manual Creation Course",
-      image: "/avatar 8.jpg",
+      image: "/Into-Me-See Manual.jpg",
       positionClass: "center",
       info: "Every heart comes with a language.<br>Every person carries an emotional operating system — the way they function, react, heal, and connect.<br>Into-Me-See is a powerful self-discovery and relationship course that helps you create your personal user’s manual — a living guide that reveals how you love to be understood, supported, and cherished.<br>Whether you’re single or married, this course helps you and your partner see beyond words — into who you truly are.",
       features: [
@@ -55,7 +55,7 @@ export function loadProducts() {
     },
     {
       title: "SCOREWISE  MASTERY COURSE",
-      image: "/Scorewise.png",
+      image: "/ScoreWise.jpg",
             positionClass: "top",
       info: "ScoreWise helps you stop chasing goals and start living wisely. <br>It’s a purpose-driven guide for anyone ready to move from confusion to clarity — singles, professionals, parents, or leaders who want results that reflect balance, peace, and purpose.",
       features: [
@@ -79,7 +79,7 @@ export function loadProducts() {
     },
             {
       title: "Vidanova — The New Life Course for Young Adults",
-      image: "/vidanova.jpg",
+      image: "/VidaNova Course.jpg",
       positionClass: "top",
       info: "Your family is more than emotions — it’s an ecosystem.A divine structure meant to host purpose, peace, and power.But without governance, homes drift — into conflict, confusion, or exhaustion. <br>This course helps you reset, redesign, and rebuild — from love to leadership.",
       features: [
@@ -91,7 +91,7 @@ export function loadProducts() {
     },
             {
       title: "FAMILY GOVERNANCE: REBUILDING THE FAMILY SYSTEM FROM WITHIN",
-      image: "/family goverance.jpg",
+      image: "/Family Goverance.jpg",
             positionClass: "top",
       info: "Your family is more than emotions — it’s an ecosystem.A divine structure meant to host purpose, peace, and power.But without governance, homes drift — into conflict, confusion, or exhaustion. <br>This course helps you reset, redesign, and rebuild — from love to leadership.",
       features: [
@@ -103,13 +103,15 @@ export function loadProducts() {
     },
     {
       title: "💍 RINGS & REALITY",
-      image: "/rings.jpg",
+      image: "/Rings and Realities.jpg",
       positionClass: "top",
-      info: "Beyond the Ring — Discover the Wisdom That Keeps Love Alive<br>This course heals the mind, builds emotional maturity, and helps you rewrite your emotional story by exposing relationship myths. You will move past feelings and fantasy to gain the practical tools needed to create a relationship built on real growth and lasting commitment. <br> Because the ring may start the story, but reality is where love is truly tested and made beautiful. 💍❤️",
+      info: "Before the ring, there was a dream. After the ring, there’s a REALITY<br>Between both lies a journey — one that only wisdom can sustain. <br> Rings & Realities isn’t just a relationship course; it’s a heart renovation. It exposes the myths, heals the mind, and builds the maturity needed to thrive in love and marriage. You’ll learn how to",
       features: [
-        "Foundation Building (Fantasy to Reality)",
-        "Maturity and Pattern Uncovering",
-        "Myth Exposure and Mental Healing",
+        "Heal from what your heart never fully recovered from",
+        "Understand your partner’s emotional language",
+        "Rebuild broken bonds and restore intimacy",
+        "Replace silent battles with honest conversations",
+        "Create a love story worth growing old in"
       ],
       link: "#"
     },
