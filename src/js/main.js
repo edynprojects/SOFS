@@ -90,16 +90,16 @@ counters.forEach((counter) => observer.observe(counter));
 
 const input = document.querySelector("#phone");
 
-const iti = window.intlTelInput(input, {
+const iti = intlTelInput(input, {
   initialCountry: "auto",
-  geoIpLookup: (callback) => {
+  geoIpLookup: callback => {
     fetch("https://ipapi.co/json")
-      .then((res) => res.json())
-      .then((data) => callback(data.country_code))
-      .catch(() => callback("ng")); // fallback
+      .then(res => res.json())
+      .then(data => callback(data.country_code))
+      .catch(() => callback("NG")); // fallback to Nigeria
   },
   nationalMode: false,
   autoPlaceholder: "polite",
   utilsScript:
-    "https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/utils.js",
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/utils.js"
 });

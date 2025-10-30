@@ -101,6 +101,7 @@ button {
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
+  z-index: 101;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .hamburger {
@@ -156,10 +157,12 @@ button {
 }
 
 .logo {
+  padding-left: 10px;
   position: relative;
 }
 .logo img {
-  width: clamp(100px, 12vw, 110px);
+    width: clamp(200px, 50vw, 290px);
+
   z-index: 2;
 }
 .nav-links {
@@ -189,7 +192,8 @@ button {
 .button-container span,
 .cta-button-container span {
   color: var(--clr-bg-white);
-  font-weight: 300;
+  /* background-color: red; */
+  font-weight: 400;
 }
 .button-container button {
   font-size: var(--font-size-base);
@@ -198,7 +202,7 @@ button {
 }
 
 .cta {
-  margin-top: 150px;
+  margin-top: 160px;
   text-align: center;
   padding: clamp(1rem, 2vw, 1.5rem);
 }
@@ -215,14 +219,14 @@ button {
   transition: background-size 0.5s ease;
 }
 .cta h1 {
-  line-height: clamp(3rem, 5vw + 1rem, 5rem);
+  line-height:6.1rem;
   font-family: Bebas Neue;
   font-weight: 800;
-  font-size: clamp(1.2rem, 5vw + 1rem, 6rem);
+  font-size: 4.6em;
 }
 .cta p {
   margin: 15px auto;
-  width: 85%;
+  width: 80%;
 }
 .cta-footer {
   display: flex;
@@ -232,7 +236,7 @@ button {
 }
 .cta-footer h2 {
   color: var(--clr-secondary);
-  font-size: 24px;
+  font-size: 26px;
 }
 .cta-footer button {
   padding: var(--space-1) var(--space-2);
@@ -244,11 +248,14 @@ button {
 .cta-button-container {
   padding: var(--space-1) var(--space-2);
   border-radius: 10px;
+  gap: 0px;
   background-color: var(--clr-accent);
   display: flex;
   align-items: center;
-  justify-content: center;
+  transition: 1s ease-in-out;
+  /* justify-content: space-between; */
 }
+
 
 /* CTA VIDEO CODES */
 .video-section {
@@ -299,6 +306,7 @@ button {
 }
 .about-cta h1 {
   color: var(--clr-secondary);
+  letter-spacing: -2px;
 }
 .about-cta-span {
   font-size: 6rem;
@@ -379,7 +387,7 @@ button {
 
 .marquee {
   display: inline-block;
-  animation: scroll 25s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 .marquee span {
@@ -448,7 +456,7 @@ button {
   margin-bottom: 30px;
 }
 .planning .title p {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 18px;
 }
 .pricing-grid-button button {
@@ -456,7 +464,7 @@ button {
 }
 .planning .title h1 {
   font-size: clamp(2.7rem, 10vw, 3rem);
-  line-height: 3.4rem;
+  line-height: 3.7rem;
   text-align: center;
   background: linear-gradient(
     120deg,
@@ -469,33 +477,22 @@ button {
 }
 
 .pricing-grid-button {
+  display: flex;
+  gap: .7rem;
   width: 100%;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background: #0d0e0f;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 6px 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 /* Base container */
 .grid-container {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
   padding: 10px;
 }
 
+
 /* Individual cards */
 .pricing-grid {
-  flex: 1 1 calc(33% - 40px); /* four per row on large screens */
-  min-width: 250px; /* prevents cards from getting too narrow */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -507,6 +504,7 @@ button {
   text-align: center;
   transition: transform 0.3s ease;
 }
+
 
 /* Hover effect for interactivity */
 .pricing-grid:hover {
@@ -566,24 +564,39 @@ button {
   font-size: 14px;
   text-align: left;
   color: #ffd445;
-  font-style: italic;
+  /* font-style: italic; */
 }
 .pricing-grid-features li {
-  margin: 8px 0;
   color: #eee;
   text-align: left;
-  font-size: 13px;
+  font-size: 14px;
   width: 100%;
 }
-
+.moreInfo {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 14px;
+  font-style: italic;
+  color: var(--clr-secondary);
+}
 /* Button */
 .pricing-grid-button button {
   font-family: poppins;
   width: 100%;
-  font-size: 17px;
+  font-size: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: #0d0e0f;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 6px 30px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
-.pricing-grid-button:hover {
+.pricing-grid-button button:hover {
   background: var(--clr-secondary);
 }
 
@@ -744,6 +757,9 @@ button {
     padding: 10px 15px;
     font-size: 0.8rem;
   }
+  .contact-section {
+  padding: 3rem 2rem;
+}
 }
 
 /* END OF PRICING */
@@ -799,8 +815,8 @@ button {
     width: 90%;
   }
   .floating {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
   }
   .cta-footer {
     flex-direction: column;
@@ -821,31 +837,41 @@ button {
     left: 7%;
   }
   .about-cta h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .about-cta-span {
-    font-size: 3.6rem;
-    line-height: 3rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
+  .pricing-grid-img {
+  height: auto;
+}
 }
 @media (max-width: 500px) {
+  .cta {
+  margin-top: 140px;
+}
   .cta h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+    line-height: 5.4rem;
   }
   .cta p {
     width: 100%;
   }
   .person-1 {
-    top: 40%;
-    left: 2%;
+    top: 25%;
+    left: 4%;
   }
   .person-2 {
-    bottom: 20%;
-    right: 5%;
+    bottom: 50%;
+    right: 0%;
   }
   .person-3 {
-    top: 70%;
-    left: 7%;
+    top: 80%;
+    left: 6%;
+  }
+    .about-cta-span {
+    font-size: 4.5rem;
   }
 }
 
@@ -1092,7 +1118,7 @@ button {
   margin-bottom: 0px;
 }
 
-.contact-grid-container {
+.contact-grid-container, .newsletter-container {
   /* background-color: red; */
   display: grid;
   grid-template-columns: 40% 60%; /* 👈 Image 40%, Form 60% */
@@ -1105,15 +1131,14 @@ button {
 }
 
 /* IMAGE CONTAINER */
-.contact-grid-img {
-  /* background-color: red; */
+.contact-grid-img, .newsletter-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* IMAGE */
-.contact-grid-img img {
+.contact-grid-img img, .newsletter-img img {
   width: 100%;
   height: auto;
   max-height: 75vh; /* 👈 prevents the image from being too tall */
@@ -1237,7 +1262,7 @@ button {
   }
 
   .contact-grid-img img {
-    max-width: 75vw; /* smaller width for mobile */
+    max-width: 80vw; /* smaller width for mobile */
     max-height: 100%; /* reduce height further */
     margin-bottom: 0rem;
   }
@@ -1245,9 +1270,7 @@ button {
   .contact-grid {
     padding: 1.5rem;
   }
-}
-@media (max-width: 768px) {
-  .form-group-row {
+    .form-group-row {
     flex-direction: column;
     gap: 1rem;
   }
@@ -1255,3 +1278,4 @@ button {
   height: 5rem;
 }
 }
+
