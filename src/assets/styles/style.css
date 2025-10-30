@@ -837,11 +837,11 @@ button {
     left: 7%;
   }
   .about-cta h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .about-cta-span {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .pricing-grid-img {
   height: auto;
