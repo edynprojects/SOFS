@@ -107,7 +107,6 @@ export function loadProducts() {
             {
       title: "FAMILY GOVERNANCE: REBUILDING THE FAMILY SYSTEM FROM WITHIN",
       image: "/Family Goverance.jpg",
-            positionClass: "top",
       info: "Your family is more than emotions — it’s an ecosystem. A divine structure meant to host purpose, peace, and power. But without governance, homes drift — into conflict, confusion, or exhaustion. <br>In this course, you’ll discover how to:",
       features: [
         "Reset, Redesign, and Rebuild — from love to leadership",
