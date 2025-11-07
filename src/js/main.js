@@ -81,6 +81,7 @@ import { floatingAvatars } from "./gsapAnimation";
 
 window.addEventListener("DOMContentLoaded", () => {
   floatingAvatars();
+  
 });
 
 
@@ -96,6 +97,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 let lastScrollY = window.scrollY;
 const nav = document.querySelector(".navigation");
 
+import { animateOnScroll } from "./smoothScroll";
+
+// About
+animateOnScroll("#About", 0, 50, 1.2);
+
+
+// animateOnScroll(".program-card", 0, 60, 1.2);
+
+animateOnScroll("#Contact", 0, 60, 1.2);
+
 // window.addEventListener("scroll", () => {
 //   if (window.scrollY > lastScrollY) {
 //     // scrolling down
@@ -109,38 +120,38 @@ const nav = document.querySelector(".navigation");
 //   lastScrollY = window.scrollY;
 // });
 
-const counters = document.querySelectorAll(".count");
+// const counters = document.querySelectorAll(".count");
 
-if (counters.length) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const counter = entry.target;
-          const target = +counter.getAttribute("data-target");
-          let count = 0;
+// if (counters.length) {
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           const counter = entry.target;
+//           const target = +counter.getAttribute("data-target");
+//           let count = 0;
 
-          const updateCount = () => {
-            const speed = 30;
-            if (count < target) {
-              count += 1;
-              counter.textContent = count + "+";
-              requestAnimationFrame(updateCount);
-            } else {
-              counter.textContent = target + "+";
-            }
-          };
+//           const updateCount = () => {
+//             const speed = 30;
+//             if (count < target) {
+//               count += 1;
+//               counter.textContent = count + "+";
+//               requestAnimationFrame(updateCount);
+//             } else {
+//               counter.textContent = target + "+";
+//             }
+//           };
 
-          updateCount();
-          observer.unobserve(counter);
-        }
-      });
-    },
-    { threshold: 0.6 }
-  );
+//           updateCount();
+//           observer.unobserve(counter);
+//         }
+//       });
+//     },
+//     { threshold: 0.6 }
+//   );
 
-  counters.forEach((counter) => observer.observe(counter));
-}
+//   counters.forEach((counter) => observer.observe(counter));
+// }
 const input = document.querySelector("#phone");
 
 const iti = intlTelInput(input, {
@@ -178,3 +189,4 @@ form.addEventListener("submit", async (e) => {
     alert("❌ Something went wrong. Please try again.");
   }
 });
+
