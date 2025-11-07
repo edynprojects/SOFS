@@ -7,39 +7,90 @@ import "./../assets/styles/style.css";
 import "intl-tel-input/build/css/intlTelInput.css";
 gsap.registerPlugin(ScrollTrigger);
 
-const markerText = document.querySelector(".cta-highlight");
+// ✅ Navigation toggle (open/close mobile menu)
+window.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const navigation = document.querySelector(".navigation");
 
-gsap.fromTo(
-  markerText,
-  { backgroundSize: "0% 100%" },
-  {
-    backgroundSize: "100% 100%",
-    duration: 1.5,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: markerText,
-      start: "top 80%", // when 80% of viewport reaches the element
-      toggleActions: "play none none reverse",
-    },
+  if (hamburger && navLinks && navigation) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      navigation.classList.toggle("active-nav");
+      hamburger.classList.toggle("open");
+    });
   }
-);
+});
+
+// ✅ Smooth scroll + close nav when clicked
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-links a");
+  const navigation = document.querySelector(".navigation");
+  const hamburger = document.querySelector(".hamburger");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+
+      if (href.startsWith("#")) {
+        e.preventDefault();
+
+        document.querySelector(href).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+
+      navigation.classList.remove("active-nav");
+      hamburger.classList.remove("open");
+      document.querySelector(".nav-links").classList.remove("active");
+    });
+  });
+});
+
+/* ---------------------------------------------------
+   ✅ Lazy-load GSAP animation only when user scrolls
+----------------------------------------------------- */
+document.addEventListener("DOMContentLoaded", async () => {
+  const markerText = document.querySelector(".cta-highlight");
+
+  if (markerText) {
+    const { gsap } = await import("gsap");
+    const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      markerText,
+      { backgroundSize: "0% 100%" },
+      {
+        backgroundSize: "100% 100%",
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: markerText,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }
+});
+
 import { floatingAvatars } from "./gsapAnimation";
 
 window.addEventListener("DOMContentLoaded", () => {
   floatingAvatars();
 });
-import { loadProducts } from "./packages";
 
-window.addEventListener("DOMContentLoaded", () => {
-  loadProducts(); // will generate your grid dynamically
-});
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const navigation = document.querySelector(".navigation");
 
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  navigation.classList.toggle("active-nav");
+document.addEventListener("DOMContentLoaded", async () => {
+  const productsGrid = document.querySelector(".grid-container");
+
+  if (productsGrid) {
+    const { loadProducts } = await import("./packages");
+    loadProducts();
+  }
 });
 
 let lastScrollY = window.scrollY;
@@ -60,34 +111,36 @@ const nav = document.querySelector(".navigation");
 
 const counters = document.querySelectorAll(".count");
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const counter = entry.target;
-        const target = +counter.getAttribute("data-target");
-        let count = 0;
+if (counters.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = +counter.getAttribute("data-target");
+          let count = 0;
 
-        const updateCount = () => {
-          const speed = 30; // smaller = faster
-          if (count < target) {
-            count += 1;
-            counter.textContent = count + "+";
-            requestAnimationFrame(updateCount);
-          } else {
-            counter.textContent = target + "+";
-          }
-        };
-        updateCount();
-        observer.unobserve(counter);
-      }
-    });
-  },
-  { threshold: 0.6 }
-);
+          const updateCount = () => {
+            const speed = 30;
+            if (count < target) {
+              count += 1;
+              counter.textContent = count + "+";
+              requestAnimationFrame(updateCount);
+            } else {
+              counter.textContent = target + "+";
+            }
+          };
 
-counters.forEach((counter) => observer.observe(counter));
+          updateCount();
+          observer.unobserve(counter);
+        }
+      });
+    },
+    { threshold: 0.6 }
+  );
 
+  counters.forEach((counter) => observer.observe(counter));
+}
 const input = document.querySelector("#phone");
 
 const iti = intlTelInput(input, {
