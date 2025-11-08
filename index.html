@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="/public/Favicon.png" type="image/x-icon" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
-<link
-  href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Tangerine:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<script
-  type="module"
-  defer
-  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-  nomodule
-  defer
-  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-></script>
-
+    <script
+      type="module"
+      defer
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      defer
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SOFS</title>
@@ -39,17 +43,16 @@
               <ion-icon name="reorder-two-outline"></ion-icon>
             </div>
           </div>
-<div class="nav-links">
-  <li><a href="#About" class="nav-link">About</a></li>
-  <li><a href="#Programs" class="nav-link">Programs</a></li>
-  <li><a href="#Contact" class="nav-link">Contact</a></li>
-  <div class="button-container">
-    <button class="connect">
-      <a href="https://linktr.ee/SchoolofFamilySolutions">Connect</a>
-    </button>
-  </div>
-</div>
-
+          <div class="nav-links">
+            <li><a href="#About" class="nav-link">About</a></li>
+            <li><a href="#Programs" class="nav-link">Programs</a></li>
+            <li><a href="#Contact" class="nav-link">Contact</a></li>
+            <div class="button-container">
+              <button class="connect">
+                <a href="https://linktr.ee/SchoolofFamilySolutions">Connect</a>
+              </button>
+            </div>
+          </div>
         </div>
 
         <div class="cta">
@@ -65,7 +68,9 @@
               families, and personal growth.
             </p>
             <div class="cta-footer fade-scroll">
-              <h2 class="hero-title">Breathe Now. Heal Deep. Flourish Forever</h2>
+              <h2 class="hero-title">
+                Breathe Now. Heal Deep. Flourish Forever
+              </h2>
               <div class="cta-button-container">
                 <button class="">
                   <a
@@ -83,19 +88,17 @@
       <img src="/public/avatar 3.webp" class="floating person-3" alt="" />
     </section>
     <section class="video-section">
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/upn3N9LzphE?si=RwCqNraX49hQdcw-"
-          title="SOFS DOCUMENTARY"
-          frameborder="0"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        >
-        </iframe>
+      <div class="video-container" id="videoWrapper">
+        <div class="video-placeholder" id="videoPlaceholder">
+          <img
+            src="https://img.youtube.com/vi/upn3N9LzphE/maxresdefault.jpg"
+            alt="SOFS Documentary Thumbnail"
+          />
+          <div class="play-btn"><ion-icon name="play"></ion-icon></div>
+        </div>
       </div>
     </section>
+
     <section class="about" id="About">
       <div class="container">
         <div class="title">
@@ -148,7 +151,6 @@
     <section class="contact-section fade-scroll">
       <div class="contact-wrapper">
         <div class="contact-content">
-
           <h3 class="contact-subtitle">Your Family Deserves This</h3>
           <h1 class="contact-title fade-in">
             Don't wait for crisis,<span>
@@ -168,7 +170,9 @@
           </p>
           <div class="contact-buttons">
             <button class="btn primary-btn fade-in">Join a Program</button>
-            <button class="btn secondary-btn fade-in">Book a Free Consultation</button>
+            <button class="btn secondary-btn fade-in">
+              Book a Free Consultation
+            </button>
           </div>
         </div>
 
@@ -189,24 +193,14 @@
             giving you the confidence and support you need.
           </p>
         </div>
-<div class="grid-container"></div>
-
-
+        <div class="grid-container"></div>
       </div>
     </section>
     <div class="load-more-services">
-    <button id="loadMoreBtn" type="button" class="load-more-btn">View More Products</button>
+      <button id="loadMoreBtn" type="button" class="load-more-btn">
+        View More Products
+      </button>
     </div>
-
-    <!-- <svg fill="none" height="18" viewBox="0 0 17 18" width="17">
-      <path
-        d="M1.4964 3.11002L4.46428 15.4055C4.73338 16.5204 6.23625 16.7146 6.77997 15.7049L9.5237 10.6094L14.9962 8.65488C16.0841 8.26638 16.108 6.73663 15.0329 6.31426L3.16856 1.65328C2.22708 1.28341 1.25905 2.12672 1.4964 3.11002ZM9.43322 10.6417L9.43355 10.6416C9.43344 10.6416 9.43333 10.6416 9.43322 10.6417L9.34913 10.4062L9.43322 10.6417Z"
-        fill="currentColor"
-        stroke="var(--ds-background-100)"
-        stroke-width="1.5"
-      ></path>
-    </svg> -->
-
     <section class="testimonial-section">
       <div class="container">
         <div class="title">
@@ -221,8 +215,6 @@
         </div>
       </div>
 
-      <!-- Top Marquee -->
-      <!-- Top Marquee -->
       <div class="testimonial-marquee-container">
         <!-- ROW 1 -->
         <div class="testimonial-marquee marquee-left">
@@ -236,8 +228,7 @@
                 she wrote herself an affirmation letter. Thank you for giving me
                 back my confident princess.
               </p>
-              <div>
-              </div>
+              <div></div>
             </div>
 
             <div class="testimonial-card">
@@ -471,7 +462,9 @@
         </div>
         <div class="newsletter-container fade-scroll">
           <div class="newsletter-cta">
-            <h1 class="fade-in">Transform Your Family Stories—One Update at a Time</h1>
+            <h1 class="fade-in">
+              Transform Your Family Stories—One Update at a Time
+            </h1>
             <p class="fade-in">
               Join our newsletter for bite-sized, actionable family tools and
               behind‑the‑scenes stories: quick rituals to calm conflict, proven
@@ -500,36 +493,47 @@
             </div>
 
             <div class="footer-contact-details fade-in">
-              <p>Meet ENA — Your Family Solution Companion 💛”
-Guidance, Answers… every step of your SOFS journey.</p>
+              <p>
+                Call ENA — Your Family Solution Companion 💛” Guidance, Answers…
+                every step of your SOFS journey.
+              </p>
               <div>
                 <ion-icon name="call-outline"></ion-icon
                 ><a href="tel:02013309648">02013309648</a>
               </div>
               <div>
-                <ion-icon name="mail-outline"></ion-icon
-                >
+                <ion-icon name="mail-outline"></ion-icon>
                 <ul>
-                  <li><a href="mailto:ena@schooloffamilysolutions.com">ena@schooloffamilysolutions.com</a></li>
-                  <li><a href="mailto:info@schooloffamilysolutions.com">info@schooloffamilysolutions.com</a></li>
-                  <li><a href="mailto:admin@schooloffamilysolutions.com">admin@schooloffamilysolutions.com</a></li>
+                  <li>
+                    <a href="mailto:ena@schooloffamilysolutions.com"
+                      >ena@schooloffamilysolutions.com</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:info@schooloffamilysolutions.com"
+                      >info@schooloffamilysolutions.com</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:admin@schooloffamilysolutions.com"
+                      >admin@schooloffamilysolutions.com</a
+                    >
+                  </li>
                 </ul>
               </div>
-              <div>
+                            <div>
                 <ion-icon name="location-outline"></ion-icon>
                 <a href=""
-                  >5A, Dozek Estate, Alternative route, Chevron Drive, Lekki</a
+                  >5A, Dozek Estate, Alternative route, Chevron Drive, Lekki, Lagos, Nigeria.</a
                 >
               </div>
+              <div>    <h4>Chat on WhatsApp</h4></div>
+          
+              <div>
+                <ion-icon name="logo-whatsapp"></ion-icon
+                ><a href="https://wa.me/9160003269?text=Hey%20School%20Of%20Family%20Solutions%20I%20am%20">09160003269</a><a href="https://wa.me/9160003270?text=Hey%20School%20Of%20Family%20Solutions%20I%20am%20">09160003270</a>
+              </div>
             </div>
-          </div>
-          <div class="grid footer-links fade-in">
-            <h3>Resources</h3>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Help Center</a></li>
-            <li><a href="">FAQs</a></li>
           </div>
         </div>
       </div>
@@ -539,17 +543,62 @@ Guidance, Answers… every step of your SOFS journey.</p>
           &copy; 2025 School of Family Solutions. All rights reserved.
         </div>
         <div class="social-icons">
-          <a href="https://www.instagram.com/schooloffamilysolutions?utm_source=qr&igsh=MXV6eWc3dzZjM3JxeA==" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="https://www.tiktok.com/@schooloffamilysolutions?_r=1&_t=ZN-918baDggXxO" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
-          <a href="https://www.youtube.com/channel/UCfb_58qLaRgOomzMABks1Yg" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-          <a href="https://x.com/FamSolutionsHQ?t=jrPV7xFRe0xZiC5yU3yfYA&s=08" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-          <a href="https://www.facebook.com/share/1CDQeax7Wh/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/fola-afuye-00223135a/"><ion-icon name="logo-linkedin"></ion-icon></a>
-          <a href="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\F4F2BDC71B9CB4BC59F2E15E910568A3\WhatsApp Image 2025-11-05 at 06.38.07_5ac49fef.jpg"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          <a
+            href="https://www.instagram.com/schooloffamilysolutions?utm_source=qr&igsh=MXV6eWc3dzZjM3JxeA=="
+            target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a
+            href="https://www.tiktok.com/@schooloffamilysolutions?_r=1&_t=ZN-918baDggXxO"
+            target="_blank"
+            ><ion-icon name="logo-tiktok"></ion-icon
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCfb_58qLaRgOomzMABks1Yg"
+            target="_blank"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+          <a
+            href="https://x.com/FamSolutionsHQ?t=jrPV7xFRe0xZiC5yU3yfYA&s=08"
+            target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+          <a href="https://www.facebook.com/share/1CDQeax7Wh/" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a href="https://www.linkedin.com/in/fola-afuye-00223135a/"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\F4F2BDC71B9CB4BC59F2E15E910568A3\WhatsApp Image 2025-11-05 at 06.38.07_5ac49fef.jpg"
+            ><ion-icon name="logo-whatsapp"></ion-icon
+          ></a>
         </div>
       </div>
     </section>
 
     <script type="module" src="/src/js/main.js"></script>
+    <script>
+      document
+        .getElementById("videoPlaceholder")
+        .addEventListener("click", function () {
+          const iframe = document.createElement("iframe");
+          iframe.src =
+            "https://www.youtube.com/embed/upn3N9LzphE?autoplay=1&rel=0";
+          iframe.title = "SOFS DOCUMENTARY";
+          iframe.loading = "lazy";
+          iframe.allow =
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          iframe.style.position = "absolute";
+          iframe.style.width = "100%";
+          iframe.style.height = "100%";
+          iframe.style.inset = "0";
+          iframe.style.border = "none";
+
+          document.getElementById("videoWrapper").innerHTML = "";
+          document.getElementById("videoWrapper").appendChild(iframe);
+        });
+    </script>
   </body>
 </html>

@@ -1,10 +1,11 @@
 console.log("WITH GOD I CAN");
-
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap, ScrollTrigger } from "./gsapCore";
 import intlTelInput from "intl-tel-input";
 import "./../assets/styles/style.css";
 import "intl-tel-input/build/css/intlTelInput.css";
+import { floatingAvatars } from "./gsapAnimation.js";
+import { animateOnScroll } from "./smoothScroll.js";
+
 gsap.registerPlugin(ScrollTrigger);
 
 // ✅ Navigation toggle (open/close mobile menu)
@@ -77,8 +78,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-import { floatingAvatars } from "./gsapAnimation";
-
 window.addEventListener("DOMContentLoaded", () => {
   floatingAvatars();
   
@@ -141,13 +140,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 let lastScrollY = window.scrollY;
 const nav = document.querySelector(".navigation");
 
-import { animateOnScroll } from "./smoothScroll";
-
 // About
 animateOnScroll("#About", 0, 50, 1.2);
 
-
-// animateOnScroll(".program-card", 0, 60, 1.2);
 
 animateOnScroll("#Contact", 0, 60, 1.2);
 
@@ -164,38 +159,6 @@ animateOnScroll("#Contact", 0, 60, 1.2);
 //   lastScrollY = window.scrollY;
 // });
 
-// const counters = document.querySelectorAll(".count");
-
-// if (counters.length) {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//           const counter = entry.target;
-//           const target = +counter.getAttribute("data-target");
-//           let count = 0;
-
-//           const updateCount = () => {
-//             const speed = 30;
-//             if (count < target) {
-//               count += 1;
-//               counter.textContent = count + "+";
-//               requestAnimationFrame(updateCount);
-//             } else {
-//               counter.textContent = target + "+";
-//             }
-//           };
-
-//           updateCount();
-//           observer.unobserve(counter);
-//         }
-//       });
-//     },
-//     { threshold: 0.6 }
-//   );
-
-//   counters.forEach((counter) => observer.observe(counter));
-// }
 const input = document.querySelector("#phone");
 
 const iti = intlTelInput(input, {
@@ -211,6 +174,7 @@ const iti = intlTelInput(input, {
   utilsScript:
     "https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/utils.js"
 });
+
 
 const form = document.querySelector(".contact-form");
 

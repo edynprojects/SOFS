@@ -1,5 +1,4 @@
-import gsap from "gsap";
-
+import { gsap, ScrollTrigger } from "./gsapCore";
 export function floatingAvatars() {
   gsap.utils.toArray(".floating").forEach((el) => {
     gsap.to(el, {
@@ -8,9 +7,10 @@ export function floatingAvatars() {
       duration: "random(8, 12)",
       repeat: -1,
       yoyo: true,
-      ease: "sine.inOut"
+      ease: "sine.inOut",
     });
   });
 }
+
 
 
