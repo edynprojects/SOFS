@@ -87,13 +87,57 @@ window.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const productsGrid = document.querySelector(".grid-container");
+  const loadMoreBtn = document.getElementById("loadMoreBtn");
 
   if (productsGrid) {
-    const { loadProducts } = await import("./packages");
-    loadProducts();
+    const { loadProducts } = await import("./packages.js");
+    
+    // Define the total number of products (from your packages array)
+    const totalProducts = 12; // Update this if your array changes
+    let currentShown = 3; // Start with 3 products (1 row)
+    
+    // Initially load the first 3 products (no animation on page load)
+    loadProducts(currentShown);
+    
+    // Function to animate newly added cards
+    const animateNewCards = (newCount) => {
+      const allCards = productsGrid.querySelectorAll(".pricing-grid");
+      const newCards = Array.from(allCards).slice(-newCount);
+      
+      gsap.fromTo(newCards, 
+        { opacity: 0, y: 30, scale: 0.95 },
+        { 
+          opacity: 1, 
+          y: 0, 
+          scale: 1, 
+          duration: 0.6, 
+          ease: "power2.out",
+          stagger: 0.15
+        }
+      );
+    };
+    
+    // Add event listener to "View More" button
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener("click", () => {
+        // Check if this click will show the last row (i.e., remaining products)
+        if (currentShown + 3 >= totalProducts) {
+          // Hide the button immediately for the last row
+          loadMoreBtn.style.display = "none";
+          // Load all remaining products
+          loadProducts();
+          // Animate the newly added cards (the remaining ones)
+          animateNewCards(totalProducts - currentShown);
+        } else {
+          // Not the last row: increment and load the next 3
+          currentShown += 3;
+          loadProducts(currentShown);
+          animateNewCards(3);
+        }
+      });
+    }
   }
 });
-
 let lastScrollY = window.scrollY;
 const nav = document.querySelector(".navigation");
 

@@ -1,9 +1,11 @@
-export function loadProducts() {
+
+export function loadProducts(limit = null) {
   const packages = [
+    // Your existing packages array remains unchanged
     {
-      title: "SmartPath Parenting Expres",
+      title: "SOFS Chritmas Express",
       image: "/Christmas Promo Image.webp",
-            positionClass: "top",
+      positionClass: "top",
       info: "THE CHRISTMAS THAT BROUGHT SOLUTIONS <br>This Christmas… something deeper than gifts is being unwrapped — Healing. Hope. Wholeness. This is not just another Christmas story.<br>It’s a reminder that love can heal, homes can rise again, and you too can start over — stronger.<br>Join the SOFS Christmas Express — All Courses Now ₦10,000 Only!<br>From the comfort of your home, in just 2 days, experience transformation through:",
       features: [
         "Swift & Sure — Marriage Without Tears",
@@ -15,10 +17,10 @@ export function loadProducts() {
       link: "https://selar.com/m/schooloffamilysolutions-official1"
     },
     {
-      title: "Dear Royalty",
+      title: "Dear Royalty Online Course for Teenagers",
       image: "/Dear Royalty Image.webp",
-            positionClass: "top",
-      info: "Teenagers need a crown check, too<br>A transformative course for boys and girls to discover their identity. <b>Dear Royalty  helps teenagers discover self-worth, build confidence, and make wise life choices.... So they grow up grounded, godly, and goal-driven.</b> What it is: <br>A confidence-building, identity-shaping course for boys and girls. Helps them discover who they really are, make wiser choices, and grow into responsible young adults.<br><b>Perfect for you if :</b>",
+      positionClass: "top",
+      info: "Teenagers need a crown check, too<br>A transformative course for boys and girls to discover their identity. Dear Royalty  helps teenagers discover self-worth, build confidence, and make wise life choices.... So they grow up grounded, godly, and goal-driven. What it is: <br>A confidence-building, identity-shaping course for boys and girls. Helps them discover who they really are, make wiser choices, and grow into responsible young adults.<br><b>Perfect for you if :</b>",
       features: [
         "You’re a parent of a preteen or teen who needs guidance.",
         "You want your child to learn values, boundaries, and healthy self-esteem",
@@ -27,7 +29,6 @@ export function loadProducts() {
       addon: "Because whispering shadows and hollow echoes, silent struggles are real…<br>Let’s silence them, and help your teens rise as the queens and kings they truly are.",
       link: "https://selar.com/dearroyalty"
     },
-        
     {
       title: "SmartPath Parenting Course",
       image: "SmartPath Parenting Image.webp",
@@ -47,15 +48,14 @@ export function loadProducts() {
       image: "/Into-Me-See Manual Image.webp",
       positionClass: "center",
       info: "Because  INTIMACY begins with SEEING INTO ME<br>Every heart comes with a language.<br>Every person carries an emotional operating system—the way they function, react, heal, and want to be loved.<br>Into-Me-See is a powerful self-discovery and relationship course that helps you create your personal user’s manual—a living guide that reveals how you love to be understood, supported, and cherished, so others can understand, support, and love you deeply. <br>Create your personal User’s Manual using SOFS’ signature tools and specialised strategies for deeper self-awareness and better relationships.",
-      features: [
-      ],
+      features: [],
       addon: "Whether you’re single or married, this course helps you and your partner see beyond words — into who you truly are. <br>✨ Into-Me-See — Because intimacy begins with seeing into me. <br>Register Today!",
       link: "https://selar.com/intomeseemanual"
     },
     {
       title: "Swift & Sure: Formular  for Marriage Without Tears",
       image: "/Swift&Sure Image.webp",
-            positionClass: "center",
+      positionClass: "center",
       info: "When you’re tired of waiting—but want to do it right.<br> Swift & Sure session is a practical coaching course for singles who feel stuck in the <b>“When will it happen?”</b> cycle and are tempted to jump in fast, with eyes half-closed. <br>This is your wake-up call : Before you rush down the aisle, let’s work on you. <br>We’ll tackle the real stuff—your mindset, emotional baggage, expectations, communication style, and non-negotiables. <br><b>Perfect for you if :</b>",
       features: [
         "You’re single and honestly.. you’re just tired of waiting.",
@@ -81,7 +81,7 @@ export function loadProducts() {
     {
       title: "SCOREWISE  MASTERY COURSE",
       image: "/ScoreWise Image.webp",
-            positionClass: "top",
+      positionClass: "top",
       info: "SCOREWISE - The Goal - Smashing Masterclass<br>ScoreWise helps you stop chasing goals and start living wisely. <br>It’s a purpose-driven guide for anyone ready to move from confusion to clarity — singles, professionals, parents, or leaders who want results that reflect balance, peace, and purpose.<br>In this course, you’ll learn to:",
       features: [
         "Set the right goals for your life’s current season.",
@@ -90,7 +90,7 @@ export function loadProducts() {
         "Break self-sabotaging patterns and win with wisdom.",
         "Stay focused and consistent without losing balance.",
       ],
-              addon: " ScoreWise — where wisdom meets winning, and peace meets purpose.",
+      addon: " ScoreWise — where wisdom meets winning, and peace meets purpose.",
       link: "https://selar.com/scorewisemastery"
     },
     {
@@ -105,7 +105,7 @@ export function loadProducts() {
       addon: "",
       link: "https://selar.com/hoperising"
     },
-            {
+    {
       title: "Vidanova — The New Life Course for Young Adults",
       image: "/VidaNova Image.webp",
       positionClass: "top",
@@ -118,7 +118,7 @@ export function loadProducts() {
       addon: "Vidanova - where you stop guessing and start becoming. <br>Your New life starts now.Register Today!",
       link: "https://selar.com/vidanova"
     },
-            {
+    {
       title: "FAMILY GOVERNANCE: REBUILDING THE FAMILY SYSTEM FROM WITHIN",
       image: "/Family Goverance Image.webp",
       info: "Your family is more than emotions — it’s an ecosystem. A divine structure meant to host purpose, peace, and power. But without governance, homes drift — into conflict, confusion, or exhaustion. <br>In this course, you’ll discover how to:",
@@ -147,7 +147,7 @@ export function loadProducts() {
       addon: "Whether you’re waiting for the ring or wearing it already, this course helps you move from fantasy to foundation — from feelings to understanding — from romance to real growth.Because the ring may start the story,but reality is where love is truly tested and made beautiful.",
       link: "https://selar.com/ringsandreality"
     },
-{
+    {
       title: "Reignite 365",
       image: "/Reignite Image.webp",
       positionClass: "top",
@@ -162,14 +162,17 @@ export function loadProducts() {
     },
   ];
 
+  // If limit is provided, slice the array to show only the first 'limit' items
+  const productsToShow = limit ? packages.slice(0, limit) : packages;
+
   const gridContainer = document.querySelector(".grid-container");
   if (!gridContainer) return;
 
-  gridContainer.innerHTML = packages
+  gridContainer.innerHTML = productsToShow
     .map(pkg => `
       <div class="pricing-grid">
         <div class="pricing-grid-img">
-          <img src="${pkg.image}" alt="${pkg.title}" class="${pkg.positionClass}">
+          <img src="${pkg.image}" alt="${pkg.title}" class="${pkg.positionClass || ''}">
         </div>
         <h3 class="pricing-grid-title">${pkg.title}</h3>
         <p class="pricing-grid-info">${pkg.info}</p>
