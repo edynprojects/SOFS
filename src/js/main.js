@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navigation = document.querySelector(".navigation");
   const hamburger = document.querySelector(".hamburger");
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       const href = link.getAttribute("href");
 
@@ -80,9 +80,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   floatingAvatars();
-  
 });
-
 
 document.addEventListener("DOMContentLoaded", async () => {
   const productsGrid = document.querySelector(".grid-container");
@@ -90,32 +88,33 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (productsGrid) {
     const { loadProducts } = await import("./packages.js");
-    
+
     // Define the total number of products (from your packages array)
     const totalProducts = 12; // Update this if your array changes
     let currentShown = 3; // Start with 3 products (1 row)
-    
+
     // Initially load the first 3 products (no animation on page load)
     loadProducts(currentShown);
-    
+
     // Function to animate newly added cards
     const animateNewCards = (newCount) => {
       const allCards = productsGrid.querySelectorAll(".pricing-grid");
       const newCards = Array.from(allCards).slice(-newCount);
-      
-      gsap.fromTo(newCards, 
+
+      gsap.fromTo(
+        newCards,
         { opacity: 0, y: 30, scale: 0.95 },
-        { 
-          opacity: 1, 
-          y: 0, 
-          scale: 1, 
-          duration: 0.6, 
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.6,
           ease: "power2.out",
-          stagger: 0.15
+          stagger: 0.15,
         }
       );
     };
-    
+
     // Add event listener to "View More" button
     if (loadMoreBtn) {
       loadMoreBtn.addEventListener("click", () => {
@@ -143,7 +142,6 @@ const nav = document.querySelector(".navigation");
 // About
 animateOnScroll("#About", 0, 50, 1.2);
 
-
 animateOnScroll("#Contact", 0, 60, 1.2);
 
 window.addEventListener("scroll", () => {
@@ -163,18 +161,17 @@ const input = document.querySelector("#phone");
 
 const iti = intlTelInput(input, {
   initialCountry: "auto",
-  geoIpLookup: callback => {
+  geoIpLookup: (callback) => {
     fetch("https://ipapi.co/json")
-      .then(res => res.json())
-      .then(data => callback(data.country_code))
+      .then((res) => res.json())
+      .then((data) => callback(data.country_code))
       .catch(() => callback("NG")); // fallback to Nigeria
   },
   nationalMode: false,
   autoPlaceholder: "polite",
   utilsScript:
-    "https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/utils.js"
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/utils.js",
 });
-
 
 const form = document.querySelector(".contact-form");
 
@@ -197,4 +194,3 @@ form.addEventListener("submit", async (e) => {
     alert("❌ Something went wrong. Please try again.");
   }
 });
-

@@ -1,4 +1,3 @@
-
 export function loadProducts(limit = null) {
   const packages = [
     {
@@ -10,10 +9,11 @@ export function loadProducts(limit = null) {
         "Swift & Sure — Marriage Without Tears",
         "Rings & Reality — The True Meaning of Marriage",
         "SmartPath Parenting — Raising Balanced Children",
-        "Hope Rising — For Teens & Young Adults"
+        "Hope Rising — For Teens & Young Adults",
       ],
-      addon: "📞 Call or message 09160003269 to register today. <br>🎄 Don’t miss this Christmas miracle — offer ends soon!",
-      link: "https://selar.com/m/schooloffamilysolutionschristmaspromo"
+      addon:
+        "📞 Call or message 09160003269 to register today. <br>🎄 Don’t miss this Christmas miracle — offer ends soon!",
+      link: "https://selar.com/m/schooloffamilysolutionschristmaspromo",
     },
     {
       title: "Dear Royalty Online Course for Teenagers",
@@ -23,10 +23,11 @@ export function loadProducts(limit = null) {
       features: [
         "You’re a parent of a preteen or teen who needs guidance.",
         "You want your child to learn values, boundaries, and healthy self-esteem",
-        "You believe teenage years don’t have to be wasted"
+        "You believe teenage years don’t have to be wasted",
       ],
-      addon: "Because whispering shadows and hollow echoes, silent struggles are real…<br>Let’s silence them, and help your teens rise as the queens and kings they truly are.",
-      link: "https://selar.com/dearroyalty"
+      addon:
+        "Because whispering shadows and hollow echoes, silent struggles are real…<br>Let’s silence them, and help your teens rise as the queens and kings they truly are.",
+      link: "https://selar.com/dearroyalty",
     },
     {
       title: "SmartPath Parenting Course",
@@ -37,10 +38,11 @@ export function loadProducts(limit = null) {
         "Discipline without damage—correct with love and authority",
         "Build emotional connection and lifelong trust",
         "Raise spiritually, mentally, and emotionally balanced children",
-        "Heal from your own parenting wounds so you don’t pass them on"
+        "Heal from your own parenting wounds so you don’t pass them on",
       ],
-      addon: "Because every child deserves a parent who knows the way—and every parent deserves a SmartPath<br>Parents are smarter. Love deeper. Raise wisely",
-      link: "https://selar.com/smartpathparenting"
+      addon:
+        "Because every child deserves a parent who knows the way—and every parent deserves a SmartPath<br>Parents are smarter. Love deeper. Raise wisely",
+      link: "https://selar.com/smartpathparenting",
     },
     {
       title: "Into-Me-See: The User’s Manual Creation Course",
@@ -48,8 +50,9 @@ export function loadProducts(limit = null) {
       positionClass: "center",
       info: "Because  INTIMACY begins with SEEING INTO ME<br>Every heart comes with a language.<br>Every person carries an emotional operating system—the way they function, react, heal, and want to be loved.<br>Into-Me-See is a powerful self-discovery and relationship course that helps you create your personal user’s manual—a living guide that reveals how you love to be understood, supported, and cherished, so others can understand, support, and love you deeply. <br>Create your personal User’s Manual using SOFS’ signature tools and specialised strategies for deeper self-awareness and better relationships.",
       features: [],
-      addon: "Whether you’re single or married, this course helps you and your partner see beyond words — into who you truly are. <br>✨ Into-Me-See — Because intimacy begins with seeing into me. <br>Register Today!",
-      link: "https://selar.com/intomeseemanual"
+      addon:
+        "Whether you’re single or married, this course helps you and your partner see beyond words — into who you truly are. <br>✨ Into-Me-See — Because intimacy begins with seeing into me. <br>Register Today!",
+      link: "https://selar.com/intomeseemanual",
     },
     {
       title: "Swift & Sure: Formular  for Marriage Without Tears",
@@ -62,8 +65,9 @@ export function loadProducts(limit = null) {
         "You want practical tools to become marriage-ready, not just marriage-hungry.",
         " Real-life exercises, honest conversations, and breakthroughs that build you up",
       ],
-      addon: "Marry Swift, but be Sure. This time, your “I do” won’t come with regrets",
-      link: "https://selar.com/swiftandsure"
+      addon:
+        "Marry Swift, but be Sure. This time, your “I do” won’t come with regrets",
+      link: "https://selar.com/swiftandsure",
     },
     {
       title: "Unburden & Clarity Session",
@@ -74,8 +78,9 @@ export function loadProducts(limit = null) {
         "Unburden your heart",
         "See your next step clearly — without feeling overwhelmed",
       ],
-      addon: "You don’t need to have it all figured out.<br>You just need to start with clarity.No therapy. No fixing. Just a safe space to be seen and supported. Book your Free 15-Minute Clarity Session today—Because sometimes, the first step to healing is finally talking to someone who truly listens.",
-      link: "https://calendly.com/admin-schooloffamilysolutions/30min"
+      addon:
+        "You don’t need to have it all figured out.<br>You just need to start with clarity.No therapy. No fixing. Just a safe space to be seen and supported. Book your Free 15-Minute Clarity Session today—Because sometimes, the first step to healing is finally talking to someone who truly listens.",
+      link: "https://calendly.com/admin-schooloffamilysolutions/30min",
     },
     {
       title: "SCOREWISE  MASTERY COURSE",
@@ -89,8 +94,9 @@ export function loadProducts(limit = null) {
         "Break self-sabotaging patterns and win with wisdom.",
         "Stay focused and consistent without losing balance.",
       ],
-      addon: " ScoreWise — where wisdom meets winning, and peace meets purpose.",
-      link: "https://selar.com/scorewisemastery"
+      addon:
+        " ScoreWise — where wisdom meets winning, and peace meets purpose.",
+      link: "https://selar.com/scorewisemastery",
     },
     {
       title: "Hope Rising Teens Therapy & Coaching Course",
@@ -102,7 +108,7 @@ export function loadProducts(limit = null) {
         "“Hope Rising gave my son his smile back” - Mrs Alli from Lagos",
       ],
       addon: "",
-      link: "https://selar.com/hoperising"
+      link: "https://selar.com/hoperising",
     },
     {
       title: "Vidanova — The New Life Course for Young Adults",
@@ -114,8 +120,9 @@ export function loadProducts(limit = null) {
         "Discover your strengths — and learn how to turn them into strategy.",
         "Step into your purpose — bold, prepared, and ready for impact.",
       ],
-      addon: "Vidanova - where you stop guessing and start becoming. <br>Your New life starts now.Register Today!",
-      link: "https://selar.com/vidanova"
+      addon:
+        "Vidanova - where you stop guessing and start becoming. <br>Your New life starts now.Register Today!",
+      link: "https://selar.com/vidanova",
     },
     {
       title: "FAMILY GOVERNANCE: REBUILDING THE FAMILY SYSTEM FROM WITHIN",
@@ -126,10 +133,11 @@ export function loadProducts(limit = null) {
         "Build unity through shared vision and roles.",
         "Create family systems that protect values and multiply success.",
         "Establish order without losing intimacy or compassion.",
-        "Heal cycles, break patterns, and design continuity across generations."
+        "Heal cycles, break patterns, and design continuity across generations.",
       ],
-      addon: "Governance turns good homes into great legacies. And great legacies into generational impact.Because when love gains structure, destiny gains direction.  Welcome to Family Governance — where families are reborn into systems that work.",
-      link: "https://selar.com/familygoverance"
+      addon:
+        "Governance turns good homes into great legacies. And great legacies into generational impact.Because when love gains structure, destiny gains direction.  Welcome to Family Governance — where families are reborn into systems that work.",
+      link: "https://selar.com/familygoverance",
     },
     {
       title: "RINGS & REALITY",
@@ -141,10 +149,11 @@ export function loadProducts(limit = null) {
         "Understand your partner’s emotional language",
         "Rebuild broken bonds and restore intimacy",
         "Replace silent battles with honest conversations",
-        "Create a love story worth growing old in"
+        "Create a love story worth growing old in",
       ],
-      addon: "Whether you’re waiting for the ring or wearing it already, this course helps you move from fantasy to foundation — from feelings to understanding — from romance to real growth.Because the ring may start the story,but reality is where love is truly tested and made beautiful.",
-      link: "https://selar.com/ringsandreality"
+      addon:
+        "Whether you’re waiting for the ring or wearing it already, this course helps you move from fantasy to foundation — from feelings to understanding — from romance to real growth.Because the ring may start the story,but reality is where love is truly tested and made beautiful.",
+      link: "https://selar.com/ringsandreality",
     },
     {
       title: "Reignite 365",
@@ -156,8 +165,9 @@ export function loadProducts(limit = null) {
         "Heal hidden hurts",
         "Create a home where peace and purpose live again",
       ],
-      addon: "Whether you’re newlyweds, parents in the rush of life, or partners who’ve drifted apart, Reignite365 helps you turn tired love into timeless connection. <br>Because love shouldn’t just survive — it should shine, grow, and reignite every day of the year.",
-      link: "https://selar.com/reignite365"
+      addon:
+        "Whether you’re newlyweds, parents in the rush of life, or partners who’ve drifted apart, Reignite365 helps you turn tired love into timeless connection. <br>Because love shouldn’t just survive — it should shine, grow, and reignite every day of the year.",
+      link: "https://selar.com/reignite365",
     },
   ];
 
@@ -168,21 +178,32 @@ export function loadProducts(limit = null) {
   if (!gridContainer) return;
 
   gridContainer.innerHTML = productsToShow
-    .map(pkg => `
+    .map(
+      (pkg) => `
       <div class="pricing-grid">
         <div class="pricing-grid-img">
-          <img src="${pkg.image}" alt="${pkg.title}" class="${pkg.positionClass || ''}">
+          <img src="${pkg.image}" alt="${pkg.title}" class="${
+        pkg.positionClass || ""
+      }">
         </div>
         <h3 class="pricing-grid-title">${pkg.title}</h3>
         <p class="pricing-grid-info">${pkg.info}</p>
         <div class="pricing-grid-features">
-          ${pkg.features.map(feature => `<div><ion-icon name="caret-forward-circle-outline"></ion-icon><li>${feature}</li></div>`).join("")}
+          ${pkg.features
+            .map(
+              (feature) =>
+                `<div><ion-icon name="caret-forward-circle-outline"></ion-icon><li>${feature}</li></div>`
+            )
+            .join("")}
         </div>
         <p class="moreInfo">${pkg.addon}</p>
         <div class="pricing-grid-button">
-          <button onclick="window.location.href='${pkg.link}'">Get started</button>
+          <button onclick="window.location.href='${
+            pkg.link
+          }'">Get started</button>
         </div>
       </div>
-    `)
+    `
+    )
     .join("");
 }
