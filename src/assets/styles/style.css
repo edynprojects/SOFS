@@ -104,7 +104,7 @@ button {
     inset: 0;
     z-index: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+        linear-gradient(to bottom, #0000000a 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.4) 100%);
     opacity: 0.95;
@@ -518,7 +518,7 @@ button {
     z-index: 9999 !important;
 }
 .flexible-plans {
-    padding-top: 20px;
+    padding-top: 100px;
     background-color: #0d0e0f;
     font-size: 14px;
     color: var(--clr-text-white);
@@ -674,7 +674,7 @@ button {
 .contact-description {
     color: wheat;
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .contact-buttons {
     display: flex;
@@ -1263,40 +1263,6 @@ button {
     line-height: 2.4rem;
     padding-bottom: 1rem;
 }
-/* ✅ Override MailerLite input styling */
-#mlb2-33138211.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
-    background-color: transparent !important;
-    color: white !important;
-    border: 1px solid #cccccc !important;
-    border-radius: 30px !important;
-    font-family: "Poppins", sans-serif !important;
-    font-size: 1rem !important;
-    padding: 0.9rem 1.2rem !important;
-    width: 80% !important;
-    outline: none !important;
-    box-sizing: border-box !important;
-    max-width: 100% !important;
-    transition:
-        border 0.3s ease,
-        border-radius 0.3s ease,
-        background-color 0.3s ease;
-}
-
-/* ✅ Button styling */
-#mlb2-33138211 .ml-button {
-    width: 80% !important;
-    padding: 0.9rem 2rem !important;
-    background: var(--clr-secondary) !important;
-    border-radius: 30px !important;
-    color: white !important;
-    border: none !important;
-    font-size: 1rem !important;
-    cursor: pointer !important;
-    transition:
-        background 0.3s ease,
-        transform 0.3s ease;
-}
-
 /* Hover effect */
 #mlb2-33138211 .ml-button:hover {
     border: 1px solid #ccc  !important;
