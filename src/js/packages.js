@@ -1,7 +1,6 @@
 
 export function loadProducts(limit = null) {
   const packages = [
-    // Your existing packages array remains unchanged
     {
       title: "SOFS Chritmas Express",
       image: "/Christmas Promo Image.webp",
@@ -14,7 +13,7 @@ export function loadProducts(limit = null) {
         "Hope Rising — For Teens & Young Adults"
       ],
       addon: "📞 Call or message 09160003269 to register today. <br>🎄 Don’t miss this Christmas miracle — offer ends soon!",
-      link: "https://selar.com/m/schooloffamilysolutions-official1"
+      link: "https://selar.com/m/schooloffamilysolutionschristmaspromo"
     },
     {
       title: "Dear Royalty Online Course for Teenagers",

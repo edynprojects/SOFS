@@ -146,18 +146,18 @@ animateOnScroll("#About", 0, 50, 1.2);
 
 animateOnScroll("#Contact", 0, 60, 1.2);
 
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > lastScrollY) {
-//     // scrolling down
-//     nav.classList.add("nav-hidden");
-//     console.log("Scrolling Down");
-//   } else {
-//     // scrolling up
-//     console.log("Scrolling up");
-//     nav.classList.remove("nav-hidden");
-//   }
-//   lastScrollY = window.scrollY;
-// });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScrollY) {
+    // scrolling down
+    nav.classList.add("nav-hidden");
+    // console.log("Scrolling Down");
+  } else {
+    // scrolling up
+    // console.log("Scrolling up");
+    nav.classList.remove("nav-hidden");
+  }
+  lastScrollY = window.scrollY;
+});
 
 const input = document.querySelector("#phone");
 
