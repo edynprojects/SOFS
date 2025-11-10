@@ -3,7 +3,7 @@ html {
     overflow-x: hidden;
 }
 .gsap-pin {
-    overflow: hidden !important;
+    overflow-y: hidden !important;
 }
 .cta,
 .flexible-plans,
