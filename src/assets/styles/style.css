@@ -490,7 +490,7 @@ button {
     padding: 10px;
 }
 .footer .grid-container {
-    padding: 10px;
+    padding: 0px;
 }
 .pricing-grid {
     display: flex;
@@ -1030,7 +1030,8 @@ button {
 }
 .br-bottom {
     width: 87%;
-    margin: 10px auto;
+    margin-top: 20px;
+    margin-inline: auto;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 .contact-form .form-group,
@@ -1315,6 +1316,9 @@ button {
 @media (max-width: 425px) {
     .container {
         padding: 0 1rem;
+    }
+    .newsletter-container {
+        padding: 40px 27px;
     }
     .contact-grid-container {
         grid-template-columns: 1fr;
