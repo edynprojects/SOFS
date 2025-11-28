@@ -27,7 +27,7 @@ export function loadProducts(limit = null) {
       ],
       addon:
         "Because whispering shadows and hollow echoes, silent struggles are real…<br>Let’s silence them, and help your teens rise as the queens and kings they truly are.",
-      link: "https://selar.com/dearroyalty",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22Dear%20Royalty%20Online%20Teens%20Course%22%20service.%20My%20name%20is%20",
     },
     {
       title: "SmartPath Parenting Course",
@@ -42,7 +42,7 @@ export function loadProducts(limit = null) {
       ],
       addon:
         "Because every child deserves a parent who knows the way—and every parent deserves a SmartPath<br>Parents are smarter. Love deeper. Raise wisely",
-      link: "https://selar.com/smartpathparenting",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22SmartPath%20Parenting%20Course%22%20service.%20My%20name%20is%20",
     },
     {
       title: "Into-Me-See: The User’s Manual Creation Course",
@@ -52,7 +52,7 @@ export function loadProducts(limit = null) {
       features: [],
       addon:
         "Whether you’re single or married, this course helps you and your partner see beyond words — into who you truly are. <br>✨ Into-Me-See — Because intimacy begins with seeing into me. <br>Register Today!",
-      link: "https://selar.com/intomeseemanual",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22Into-Me-See%20Manual%20Creation%20Course%22%20service.%20My%20name%20is%20",
     },
     {
       title: "Swift & Sure: Formular  for Marriage Without Tears",
@@ -67,7 +67,7 @@ export function loadProducts(limit = null) {
       ],
       addon:
         "Marry Swift, but be Sure. This time, your “I do” won’t come with regrets",
-      link: "https://selar.com/swiftandsure",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22Swift%20%26%20Sure%22%20service.%20My%20name%20is%20",
     },
     {
       title: "Unburden & Clarity Session",
@@ -96,7 +96,7 @@ export function loadProducts(limit = null) {
       ],
       addon:
         " ScoreWise — where wisdom meets winning, and peace meets purpose.",
-      link: "https://selar.com/scorewisemastery",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22ScoreWise%20Mastery%20Course%22%20service.%20My%20name%20is%20",
     },
     {
       title: "Hope Rising Teens Therapy & Coaching Course",
@@ -108,7 +108,7 @@ export function loadProducts(limit = null) {
         "“Hope Rising gave my son his smile back” - Mrs Alli from Lagos",
       ],
       addon: "",
-      link: "https://selar.com/hoperising",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22Hope-Rising%20Teens%20Therapy%20%26%20Coaching%20Course%22%20service.%20My%20name%20is%20",
     },
     {
       title: "Vidanova — The New Life Course for Young Adults",
@@ -122,7 +122,7 @@ export function loadProducts(limit = null) {
       ],
       addon:
         "Vidanova - where you stop guessing and start becoming. <br>Your New life starts now.Register Today!",
-      link: "https://selar.com/vidanova",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22Vida%20Nova%22%20service.%20My%20name%20is%20",
     },
     {
       title: "FAMILY GOVERNANCE: REBUILDING THE FAMILY SYSTEM FROM WITHIN",
@@ -137,7 +137,7 @@ export function loadProducts(limit = null) {
       ],
       addon:
         "Governance turns good homes into great legacies. And great legacies into generational impact.Because when love gains structure, destiny gains direction.  Welcome to Family Governance — where families are reborn into systems that work.",
-      link: "https://selar.com/familygoverance",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22Family%20Governance%22%20service.%20My%20name%20is%20",
     },
     {
       title: "RINGS & REALITY",
@@ -153,7 +153,7 @@ export function loadProducts(limit = null) {
       ],
       addon:
         "Whether you’re waiting for the ring or wearing it already, this course helps you move from fantasy to foundation — from feelings to understanding — from romance to real growth.Because the ring may start the story,but reality is where love is truly tested and made beautiful.",
-      link: "https://selar.com/ringsandreality",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22Rings%20%26%20Realities%22%20service.%20My%20name%20is%20",
     },
     {
       title: "Reignite 365",
@@ -167,7 +167,7 @@ export function loadProducts(limit = null) {
       ],
       addon:
         "Whether you’re newlyweds, parents in the rush of life, or partners who’ve drifted apart, Reignite365 helps you turn tired love into timeless connection. <br>Because love shouldn’t just survive — it should shine, grow, and reignite every day of the year.",
-      link: "https://selar.com/reignite365",
+      link: "https://wa.me/2349160003269?text=Good%20day%20Ena%2C%20I%20am%20reaching%20out%20to%20inquire%20about%20the%20%22Reignite365%22%20service.%20My%20name%20is%20",
     },
   ];
 
